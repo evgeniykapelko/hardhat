@@ -10,7 +10,7 @@ describe("Payments", function () {
         [acc1, acc2] = await ethers.getSigners()
         const Payments = await ethers.getContractFactory("Payments", acc1)
         payments = await Payments.deploy()
-        await payments.deployed
+        await payments.deployed()
         console.log(payments.address)
     })
 
